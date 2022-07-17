@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 100%, 98%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px);
+  margin: 1.25rem;
+}
+/* .outbox{
+    width: 800px;
+    height: 500px;
+    border: none;
+    box-shadow: 0 10px 10px 0 rgba(0,0 ,0, 0.1);
+    background: #d5e1ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.25rem;
+
+} */
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 500px;
+  background-color:var(--light-gray);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+.container {
+  position: relative;
+  width: 25%;
+  height: 90%;
+  background-color: var(--white);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  margin: 2rem;
+}
+
+.container img {
+  width: 100%;
+  height: 50%;
+  border-radius: 0.625rem;
+  margin-bottom: 1rem;
+}
+
+.container h1 {
+  color: var(--dark-blue);
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.container p {
+  color: var(--grayish-blue);
+  text-align: center;
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+@media (min-width:280px) {
+  .container{
+    min-width: 200px;
+    min-height: 460px;
+  }
+  .container h1{
+    font-size: 1.35rem;
+  }
+  .container p{
+    margin-top: 30px;
+    font-size: 0.625rem;
+  }
+}
+@media (min-width: 360px) {
+  .container {
+    min-width: 270px;
+    min-height: 450px;
+  }
+  .container h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+}
+/* .c1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+    background: #70bbce;
+}
+.c2{
+    position: absolute;
+    border: 7px solid #1d2b3a;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    opacity: 0.1;
+    margin-left: 88.5%;
+    transform: translateY(540px);
+}
+.cc{
+    position: absolute;
+    width: 33px;
+    height: 30px;
+    left: -15px;
+    top: 50%;
+    }
+.row{
+    display: flex;
+    gap: 3px;
+}
+.row .c1{
+    flex: 50%;
+    margin: 1px;
+}
+.zigzag{
+    position: absolute;
+    top: 150px;
+    right: -50px;
+    height: 50px;
+    width: 300px;
+    background:
+    linear-gradient(135deg, #f0f0f0 35%, transparent 25%) -25px 0,
+    linear-gradient(225deg, #f0f0f0 35%, transparent 25%) -25px 0,
+    linear-gradient(315deg, #f0f0f0 35%, transparent 25%),
+    linear-gradient(45deg, #f0f0f0 35%, transparent 25%);
+    background-size: 50px 50px;
+    background-color: #f8c6c5;
+  }
+.l{
+    background-color: #f0f0f0;
+    position: absolute;
+    top: -10px;
+    left: 60%;
+    width: 30px;
+    height: 85px;
+    border-radius: 5px;
+    border:8px solid #f8c6c5;
+    border-right: transparent;
+    border-top: transparent;
+  }
+ .h1 hr{
+    width: 120px;
+    height: 8px;
+    background-color: #70bbce;
+    border: 1px solid #70bbce;
+    border-radius: 10px;
+    position: relative;
+    top: 670px;
+    left: 30%;
+    transform: rotate(-65deg);
+    opacity: 0.1;
+  }
+  .h2 hr{
+    width: 120px;
+    height: 8px;
+    border: 1px solid #70bbce;
+    background-color: #70bbce;
+    border-radius: 25px;
+    position: relative;
+    top: 670px;
+    left: 26%;
+    transform: rotate(-65deg);
+    opacity: 0.1;
+}
+
+/* Medium */
+/* @media (min-width: 992px) {
+    {
+    width: 100%;
+  }
+}
+/* Large */
+/* @media (min-width: 1200px) {
+    {
+    width: 100%;
+  }
+} */ 
